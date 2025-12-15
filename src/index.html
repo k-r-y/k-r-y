@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://k-r-y.vercel.app" />
     <link rel="icon" type="image/jpeg" href="assets/pic.jpg" />
 
-    <!-- Open Graph / Facebook -->
+
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.facebook.com/prince.andrew.casiano.2024" />
     <meta property="og:title" content="Prince Andrew Casiano | Web Developer Portfolio" />
@@ -37,27 +37,78 @@
 
     </head>
   <body class="py-12 px-4">
-    <main class="max-w-[1200px] flex gap-6 flex-col lg:flex-row mx-auto">
-      <section class="flex-1 flex flex-col items-center justify-start gap-3">
-        <div class="relative max-h-[15rem] max-w-[15rem] overflow-hidden">
-          <img src="assets/pic.jpg" alt="Prince Andrew Casiano Profile Picture" class="rounded-full  aspect-square object-cover w-full h-full " />
-          <div class="w-[1.5rem] h-[1.5rem] p-4 border border-6 border-white bg-green-500 rounded-full absolute bottom-[1rem] right-[1.5rem] z-10"></div>
-        </div>
-       
-        <div class="">
-          <h1 class="text-3xl font-semibold">Prince Andrew Casiano</h1>
-          <p class="flex items-center gap-2">BSIS Student</p>
-           
-           
-        </div>
+    <main class="max-w-[1200px] flex gap-3 flex-col lg:flex-row mx-auto">
+      <section class="flex-3 flex flex-col items-center justify-start gap-3">
 
-       
+        <div class="w-full border border-gray-300 rounded-md shadow-lg shadow-gray-100 overflow-hidden bg-white">
+          
+
+          <div class="h-24 bg-gray-100 relative">
+
+          </div>
+
+          <div class="px-6 pb-6">
+
+            <div class="relative -mt-12 mb-4 flex justify-between items-end">
+               <div class="relative">
+                  <div class="h-24 w-24 rounded-full border-4 border-white overflow-hidden bg-white shadow-sm">
+                    <img src="assets/pic.jpg" alt="Prince Andrew Casiano" class="w-full h-full object-cover">
+                  </div>
+
+                  <div class="absolute bottom-1 right-1 w-3.5 h-3.5 bg-green-500 border-2 border-white rounded-full"></div>
+               </div>
+               
+
+               <a href="assets/pic.jpg" download class="mb-2 px-4 py-1.5 bg-gray-900 text-white text-sm font-semibold rounded-full hover:bg-gray-800 transition-colors shadow-sm">
+                  Download CV
+               </a>
+            </div>
+
+
+            <div class="mb-4">
+              <h1 class="text-xl font-bold text-gray-900 flex items-center gap-1">
+                Prince Andrew Casiano 
+                <img src="assets/verified.png" alt="Verified" class="w-4 h-4" title="Verified Developer">
+              </h1>
+              <p class="text-gray-500 text-sm">kry</p>
+            </div>
+
+
+            <div class="space-y-2 text-sm text-gray-600 mb-2">
+              <div class="flex items-center gap-3">
+                <i class='bx bx-education text-lg text-gray-400'></i>
+                <span>Kolehiyo ng Lungsod ng Dasmariñas</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class='bx bx-map text-lg text-gray-400'></i>
+                <span>Dasmariñas, Cavite</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class='bx bx-link text-lg text-gray-400'></i>
+                <p class="text-gray-600 hover:underline">casianoprince5@gmail.com</p>
+              </div>
+              
+            </div>
+
+
+             <div class="mt-4 pt-4 border-t border-gray-100">
+               <p class="text-sm text-gray-600 italic">
+                 "I'm not stupid, I'm just too lazy to show how smart I am."
+               </p>
+             </div>
+
+          </div>
+        </div>
       </section>
 
-      <section class="flex-2 flex flex-col items-start justify-start gap-3">
-        <div class="border border-gray-300 p-6 shadow-lg shadow-gray-100 rounded-md flex flex-col gap-6">
+      <section class="flex-5 flex flex-col items-start justify-start gap-3">
+        <div class="border border-gray-300 p-6 shadow-lg shadow-gray-100 hover:-translate-y-0.5 hover:shadow-gray-200 transition-all rounded-md flex flex-col gap-6">
           <div class="">
-            <h2 class="text-xl font-semibold flex items-center gap-2"> <i class='bx  bx-user'></i> About</h2>
+            <div class="flex items-center justify-between">
+               <h2 class="text-xl font-semibold flex items-center gap-2"> <i class='bx  bx-user'></i> About</h2>
+               <a href="about.html" class="flex items-center gap-2 group  text-sm text-gray-500">Learn More <i class='bx  bx-arrow-right-stroke group-hover:translate-x-2 transition-all'></i> </a>
+            </div>
+           
             <p class="text-gray-600 leading-relaxed">
               I am <span class="font-semibold text-gray-900">Prince Andrew Casiano</span>, an Information Systems student interested in web development. 
               I focus on building functional websites using <span class="font-semibold">PHP, MySQL,</span> and other modern tools such as <span class="font-semibold">Tailwind CSS and React</span>. 
@@ -69,8 +120,11 @@
         </div>
 
 
-         <div class="flex flex-col gap-3 w-full border border-gray-300 p-3 shadow-lg shadow-gray-100 rounded-md">
-            <h2 class="text-xl font-semibold flex items-center gap-2"> <i class='bx  bx-code-alt text-2xl'></i> Tech Stack & Tools</h2>
+         <div class="flex flex-col gap-3 w-full border border-gray-300 p-3 shadow-lg shadow-gray-100 rounded-md hover:-translate-y-0.5 hover:shadow-gray-200 transition-all">
+             <div class="flex items-center justify-between">
+               <h2 class="text-xl font-semibold flex items-center gap-2"> <i class='bx  bx-code-alt text-2xl'></i> Tech Stack & Tools</h2>
+               <a href="stack.html" class="flex items-center gap-2 group  text-sm text-gray-500">Learn More <i class='bx  bx-arrow-right-stroke group-hover:translate-x-2 transition-all'></i> </a>
+            </div>
             <div class="flex gap-3 flex-col md:flex-row" >
               
               <div class="border border-gray-300 p-3 rounded-md flex-1 ">
@@ -163,8 +217,11 @@
               </div>
 
 
-              <div class="flex gap-3 flex-wrap flex-col w-full border border-gray-300 p-3 shadow-lg shadow-gray-100 rounded-md">
-                <h2 class="text-xl font-semibold flex items-center gap-2"> <i class='bx  bx-layers-down-right'></i> Additional Information</h2>
+              <div class="flex gap-3 flex-wrap flex-col w-full border border-gray-300 p-3 shadow-lg shadow-gray-100 rounded-md hover:-translate-y-0.5 hover:shadow-gray-200 transition-all">
+                <div class="flex items-center justify-between">
+                  <h2 class="text-xl font-semibold flex items-center gap-2"> <i class='bx  bx-layers-down-right'></i> Additional Information</h2>
+                  <a href="hobbies.html" class="flex items-center gap-2 group  text-sm text-gray-500">Learn More <i class='bx  bx-arrow-right-stroke group-hover:translate-x-2 transition-all'></i> </a>
+                </div>
                 
                 <div class="flex gap-3 flex-col md:flex-row  lg:flex-row"
                  >
@@ -198,8 +255,8 @@
                   <div class="flex flex-col gap-2">
                   <div class="relative border-l-2 border-gray-200 ml-4 space-y-8 my-4">
                     
-                    <div class="relative pl-6">
-                      <span class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-white border-4 hover:border-gray-800 border-gray-400 transition-colors"></span>
+                    <div class="relative pl-6 group">
+                      <span class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-white border-4 group-hover:border-gray-800 border-gray-400 transition-colors"></span>
                       <div class="flex justify-between items-start w-full">
                         <div class="max-w-[70%]">
                           <h4 class="font-bold text-gray-900 text-sm">BS Information System</h4>
@@ -209,8 +266,8 @@
                       </div>
                     </div>
 
-                    <div class="relative pl-6">
-                      <span class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-white border-4 hover:border-gray-800 border-gray-400 transition-colors"></span>
+                    <div class="relative pl-6 group">
+                      <span class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-white border-4 group-hover:border-gray-800 border-gray-400 transition-colors"></span>
                       <div class="flex justify-between items-start w-full">
                         <div class="max-w-[70%]">
                           <h4 class="font-bold text-gray-900 text-sm">First Full Stack Project</h4>
@@ -220,8 +277,8 @@
                       </div>
                     </div>
 
-                    <div class="relative pl-6">
-                      <span class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-white border-4 hover:border-gray-800 border-gray-400 transition-colors"></span>
+                    <div class="relative pl-6 group">
+                      <span class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-white border-4 group-hover:border-gray-800 border-gray-400 transition-colors"></span>
                       <div class="flex justify-between items-start w-full">
                         <div class="max-w-[70%]">
                           <h4 class="font-bold text-gray-900 text-sm">First School Project</h4>
@@ -231,8 +288,8 @@
                       </div>
                     </div>
 
-                    <div class="relative pl-6">
-                      <span class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-white border-4 hover:border-gray-800 border-gray-400 transition-colors"></span>
+                    <div class="relative pl-6 group">
+                      <span class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-white border-4 group-hover:border-gray-800 border-gray-400 transition-colors"></span>
                       <div class="flex justify-between items-start w-full">
                         <div class="max-w-[70%]">
                           <h4 class="font-bold text-gray-900 text-sm">Hello World!</h4>
@@ -253,11 +310,14 @@
             </div>
         </div>
 
-        <div>
-          <h2 class="text-xl font-semibold mb-3 flex items-center gap-2"> <i class='bx  bx-widget-horizontal'></i>  Projects</h2>
+        <div class="flex flex-col gap-3 w-full border border-gray-300 p-3 shadow-lg shadow-gray-100 rounded-md hover:-translate-y-0.5 hover:shadow-gray-200 transition-all  ">
+          <div class="flex items-center justify-between">
+            <h2 class="text-xl font-semibold flex items-center gap-2"> <i class='bx  bx-widget-horizontal'></i>  Projects</h2>
+            <a href="projects.html" class="flex items-center gap-2 group  text-sm text-gray-500">Learn More <i class='bx  bx-arrow-right-stroke group-hover:translate-x-2 transition-all'></i> </a>
+          </div>
 
-          <div class="flex gap-5 justify-start items-start flex-wrap ">
-            <div class="h-full flex-1 min-w-[15rem] border border-gray-300 rounded-md p-3 ">
+          <div class="flex gap-5 justify-start items-start flex-wrap">
+            <div class="h-full flex-1 flex flex-col gap-3 min-w-[15rem] border border-gray-300 rounded-md p-3">
               <a href="https://github.com/k-r-y/apertureProject" target="_blank">
                 <img
                 src="assets/aperture.png"
@@ -293,7 +353,7 @@
               </div>
             </div>
 
-            <div class="h-full flex-1 border   min-w-[15rem]  border-gray-300 rounded-md p-3 ">
+            <div class="h-full flex-1 border flex flex-col gap-3   min-w-[15rem]  border-gray-300 rounded-md p-3 ">
               <a href="https://github.com/k-r-y/grade" target="_blank">
                 <img
                 src="assets/gradePortal.png"
@@ -304,7 +364,7 @@
               
               <div class="mb-3">
                 <h3 class="text-lg font-semibold">Grade Portal</h3>
-                <p class="text-sm">Grade Portal</p>
+                <p class="text-sm">Grade Portal System for Students and Teachers. </p>
               </div>
               <div class="flex gap-2 flex-wrap">
                 <p class="text-xs px-2 py-1 border border-gray-300 rounded-md">
@@ -331,6 +391,18 @@
         </div>
       </section>
     </main>
+
+   
+
+    <footer class="flex flex-col gap-1 w-full justify-center items-center mt-10 w-full">
+       <hr class="w-full border-gray-300">
+      <div class="flex gap-1 w-full justify-center items-center">
+       
+
+        <h3 class="text-md text-gray-500">Copyright &copy; 2025</h3>
+        <p class="text-md text-gray-500">Developed by <a href="https://github.com/k-r-y">K-R-Y</a></p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
