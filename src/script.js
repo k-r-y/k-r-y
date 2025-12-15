@@ -1,6 +1,4 @@
 
-// Gallery Data Source (Simulating a folder)
-// You can add as many images as you want here.
 const galleryImages = [
     'assets/images/pfp.jpg',
     'assets/images/pic.jpg'
@@ -12,10 +10,10 @@ const lightboxImg = document.getElementById('lightbox-img');
 const closeBtn = document.querySelector('#lightbox span');
 const prevBtn = document.getElementById('lightbox-prev');
 const nextBtn = document.getElementById('lightbox-next');
+const downloadBtn = document.getElementById('lightbox-download');
 
 let currentIndex = 0;
 
-// Render Gallery Grid (Max 6)
 if (galleryGrid) {
     const maxVisible = 6;
     const visibleImages = galleryImages.slice(0, maxVisible);
@@ -28,8 +26,8 @@ if (galleryGrid) {
         img.src = src;
         img.alt = `Gallery Image ${index + 1}`;
         img.className = 'w-full h-full object-cover';
+        img.loading = 'lazy';
 
-        // Open lightbox on click
         div.addEventListener('click', () => {
             openLightbox(index);
         });
@@ -39,12 +37,10 @@ if (galleryGrid) {
     });
 }
 
-// Lightbox Logic
 const openLightbox = (index) => {
     currentIndex = index;
     updateLightboxImage();
     lightbox.classList.remove('hidden');
-    // Small timeout for fade-in effect
     setTimeout(() => {
         lightbox.classList.remove('opacity-0');
         lightboxImg.classList.remove('scale-95');
@@ -55,7 +51,12 @@ const openLightbox = (index) => {
 const updateLightboxImage = () => {
     if (currentIndex >= galleryImages.length) currentIndex = 0;
     if (currentIndex < 0) currentIndex = galleryImages.length - 1;
-    lightboxImg.src = galleryImages[currentIndex];
+    const imgSrc = galleryImages[currentIndex];
+    lightboxImg.src = imgSrc;
+
+    if (downloadBtn) {
+        downloadBtn.href = imgSrc;
+    }
 };
 
 const closeLightbox = () => {
@@ -65,10 +66,10 @@ const closeLightbox = () => {
     setTimeout(() => {
         lightbox.classList.add('hidden');
         lightboxImg.src = '';
+        document.body.style.overflow = '';
     }, 300);
 };
 
-// Event Listeners for Lightbox
 if (lightbox) {
     closeBtn.addEventListener('click', closeLightbox);
 
