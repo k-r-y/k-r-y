@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta name="google-site-verification" content="GYKphidzZ1C7laYsO25aN_HZ0B9GjfEV0R-NDfzWLVU" />
     <meta charset="UTF-8" />
@@ -11,6 +11,7 @@
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://k-r-y.vercel.app" />
     <link rel="icon" type="image/jpeg" href="assets/pic.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
 
     <meta property="og:type" content="website" />
@@ -55,7 +56,7 @@
                     <img src="assets/images/pic.jpg" alt="Prince Andrew Casiano" class="w-full h-full object-cover">
                   </div>
 
-                  <div class="absolute bottom-1 right-1 w-3.5 h-3.5 bg-green-500 border-2 border-white rounded-full"></div>
+                  <div class="absolute bottom-1 right-0.5  bg-green-500 border-4 p-2 border-white rounded-full"></div>
                </div>
                
 
@@ -418,34 +419,87 @@
       </section>
     </main>
 
-    <section class="max-w-[1200px] flex gap-3 flex-col lg:flex-row mx-auto border border-gray-300 p-3 shadow-lg shadow-gray-100  rounded-md mt-10">
-      <div class="w-full max-w-2xl mx-auto border border-gray-300 p-3 shadow-lg shadow-gray-100  rounded-md">
-        <h1 class="text-2xl font-semibold flex items-center gap-2 mb-6 justify-center"> <i class='bx bx-envelope'></i> Contact Me</h1>
-        <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col gap-4">
-
-         <input type="hidden" name="access_key" value="f429c865-9ddb-42ed-8cf5-adad055a6f71">
-
-          <div class="flex flex-col md:flex-row gap-4">
-            <div class="flex-1 flex flex-col gap-1">
-              <label for="name" class="text-sm font-semibold text-gray-700">Name</label>
-              <input name="name" id="name" type="text" class="w-full p-1 border border-gray-300 rounded-md focus:outline-none focus:border-gray-500 bg-gray-50 transition-colors" required>
+    <section class="max-w-[1200px] mx-auto mt-12 bg-white rounded-xl shadow-xl shadow-gray-100 overflow-hidden border border-gray-100 flex flex-col md:flex-row">
+      
+      <!-- Left Column: Info & Socials (Visible on Desktop) -->
+      <div class="hidden md:flex flex-col p-10 md:w-96 justify-between relative overflow-hidden bg-gray-50 border-r border-gray-100">
+         
+         <div class="relative z-10">
+            <h2 class="text-2xl font-bold mb-4 tracking-tight text-gray-900">Contact Information</h2>
+            <p class="text-gray-500 text-sm mb-8 leading-relaxed">
+              Have a project in mind or just want to say hello? Fill up the form and I'll get back to you within 24 hours.
+            </p>
+            
+            <div class="space-y-6">
+                <div class="flex items-start gap-4 group">
+                    <div class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center flex-shrink-0 text-gray-400 group-hover:text-black group-hover:border-black transition-all duration-300">
+                        <i class='bx bx-envelope text-xl'></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold text-gray-900 uppercase tracking-wide mb-1">Email</h4>
+                        <a href="mailto:casianoprince5@gmail.com" class="text-sm text-gray-500 hover:text-black transition-colors font-medium">casianoprince5@gmail.com</a>
+                    </div>
+                </div>
+                 <div class="flex items-start gap-4 group">
+                    <div class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center flex-shrink-0 text-gray-400 group-hover:text-black group-hover:border-black transition-all duration-300">
+                        <i class='bx bx-map text-xl'></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold text-gray-900 uppercase tracking-wide mb-1">Location</h4>
+                        <p class="text-sm text-gray-500">Dasmariñas, Cavite</p>
+                    </div>
+                </div>
             </div>
-            <div class="flex-1 flex flex-col gap-1">
-              <label for="email" class="text-sm font-semibold text-gray-700">Email</label>
-              <input name="email" id="email" type="email"  class="w-full p-1 border border-gray-300 rounded-md focus:outline-none focus:border-gray-500 bg-gray-50 transition-colors" required>
+         </div>
+
+         <div class="relative z-10 mt-12">
+            <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Connect</p>
+            <div class="flex gap-3">
+             <a href="https://www.facebook.com/prince.andrew.casiano.2024" target="_blank" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center flex-shrink-0 text-gray-400 hover:text-black hover:border-blue-500 transition-all duration-300 group">
+                      <i class="fa-brands fa-facebook-f text-xl group-hover:text-blue-500 duration-300"></i>
+                    </a>
+              <a href="https://github.com/k-r-y" target="_blank" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center flex-shrink-0 text-gray-400 hover:text-black hover:border-black transition-all duration-300 group">
+                       <i class="fa-brands fa-github text-xl group-hover:text-black duration-300"></i> 
+              </a>
             </div>
-          </div>
-          <div class="flex flex-col gap-1">
-            <label for="message" class="text-sm font-semibold text-gray-700">Message</label>
-            <textarea id="message" name="message" rows="5" class="w-full p-1 border border-gray-300 rounded-md focus:outline-none focus:border-gray-500 bg-gray-50 transition-colors" required></textarea>
-          </div>
+         </div>
+      </div>
+     
+      <!-- Right Column: Form -->
+      <div class="flex-1 p-6 md:p-10 lg:p-12 relative bg-white">
+         <h2 class="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2">
+            Send a Message
+         </h2>
+         <p class="text-gray-500 text-sm mb-8">
+            Feel free to reach out. I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+         </p>
 
-          <input type="hidden" name="redirect" value="https://web3forms.com/success">
+         <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col gap-5">
+             <input type="hidden" name="access_key" value="f429c865-9ddb-42ed-8cf5-adad055a6f71">
+             <div class="flex flex-col md:flex-row gap-5">
+                <div class="flex-1 flex flex-col gap-1.5">
+                   <label for="name" class="text-xs font-bold text-gray-900 uppercase tracking-wide">Name</label>
+                   <input name="name" id="name" type="text" placeholder="Your Name" class="w-full px-4 py-3 border-b-2 border-gray-100 focus:border-black bg-transparent outline-none transition-all text-sm placeholder-gray-300" required>
+                </div>
+                 <div class="flex-1 flex flex-col gap-1.5">
+                   <label for="email" class="text-xs font-bold text-gray-900 uppercase tracking-wide">Email</label>
+                   <input name="email" id="email" type="email" placeholder="example@gmail.com" class="w-full px-4 py-3 border-b-2 border-gray-100 focus:border-black bg-transparent outline-none transition-all text-sm placeholder-gray-300" required>
+                </div>
+             </div>
+             
+             <div class="flex flex-col gap-1.5">
+                <label for="message" class="text-xs font-bold text-gray-900 uppercase tracking-wide">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="How can I help you?" class="w-full px-4 py-3 border-b-2 border-gray-100 focus:border-black bg-transparent outline-none transition-all text-sm resize-none placeholder-gray-300" required></textarea>
+             </div>
 
-          <button type="submit" class="px-2 py-1 bg-gray-900 text-white font-semibold rounded-md hover:bg-gray-800 transition-colors w-full self-end cursor-pointer">Send Message</button>
-           
+             <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
-        </form>
+             <div class="flex justify-end mt-6">
+                <button type="submit" class="px-8 py-3 bg-black text-white font-bold text-xs uppercase tracking-widest hover:bg-gray-800 transition-colors flex items-center gap-2 group">
+                    Send Message <i class='bx  bx-arrow-right-stroke group-hover:translate-x-2 transition-all'></i>
+                </button>
+             </div>
+         </form>
       </div>
     </section>
 
